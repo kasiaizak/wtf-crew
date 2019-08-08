@@ -16,3 +16,23 @@ body {
   color: $white;
   background: $codgray;
 }
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  padding-top: 5.125rem;
+  padding-left: 2.875rem;
+  &__description {
+    max-width: 623px;
+    width: 100%;
+    font-size: 1.3125rem;
+    line-height: 1.75rem;
+  }
+  &__title {
+    font-weight: bold;
+    font-size: 3rem;
+  }
+}
