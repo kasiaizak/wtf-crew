@@ -1,9 +1,11 @@
 @import "_normalize";
 @import "_variables";
+@import url('https://fonts.googleapis.com/css?family=Fira+Code:400,700&display=swap&subset=latin-ext');
 
 
 html {
   box-sizing: border-box;
+  font-family: 'Fira Code', monospace;
 }
 
 *, *:before, *:after {
