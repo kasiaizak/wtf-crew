@@ -1,0 +1,34 @@
+.nav {
+    padding-top: 44px;
+    max-width: 432px;
+    &__list {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+    }
+    &__list-button {
+        all: unset;
+        cursor: pointer;
+        width: 108px;
+        height: 41px;
+        text-align: center;
+    }
+    &__list-element {
+        width: 108px;
+        height: 41px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 0.75rem;
+        line-height: 1rem;
+        border: 1px solid #ffffff;
+        &:hover {
+            background: $white;
+            color: $codgray;
+        }
+    }
+}
