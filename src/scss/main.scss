@@ -1,38 +1,75 @@
 @import "_normalize";
 @import "_variables";
-@import url('https://fonts.googleapis.com/css?family=Fira+Code:400,700&display=swap&subset=latin-ext');
-
+@import url("https://fonts.googleapis.com/css?family=Fira+Code:400,700&display=swap&subset=latin-ext");
 
 html {
-  box-sizing: border-box;
-  font-family: 'Fira Code', monospace;
+    box-sizing: border-box;
+    font-family: "Fira Code", monospace;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
 
 body {
-  color: $white;
-  background: $codgray;
+    color: $white;
+    background: $codgray;
 }
 
 .main {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2.875rem;
 }
 
 .header {
-  padding-top: 5.125rem;
-  padding-left: 2.875rem;
-  &__description {
-    max-width: 623px;
-    width: 100%;
-    font-size: 1.3125rem;
-    line-height: 1.75rem;
-  }
-  &__title {
-    font-weight: bold;
-    font-size: 3rem;
-  }
+    padding-top: 5.125rem;
+    &__description {
+        margin: 0;
+        max-width: 623px;
+        width: 100%;
+        font-size: 1.3125rem;
+        line-height: 1.75rem;
+    }
+    &__title {
+        font-weight: bold;
+        font-size: 3rem;
+    }
+}
+
+.nav {
+    padding-top: 44px;
+    max-width: 432px;
+    &__list {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+    }
+    &__list-button {
+      all: unset;
+      cursor: pointer;
+      width: 108px;
+      height: 41px;
+      text-align: center;
+    }
+    &__list-element {
+        width: 108px;
+        height: 41px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 0.75rem;
+        line-height: 1rem;
+        border: 1px solid #ffffff;
+        &:hover {
+            background: $white;
+            color: $codgray;
+        }
+    }
 }
