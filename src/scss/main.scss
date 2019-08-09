@@ -34,7 +34,7 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding-left: 2.875rem;
+    padding: 0 2.875rem;
     @media #{$mobile} {
         width: 90vw;
         margin: 0 auto;
