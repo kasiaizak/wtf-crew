@@ -18,8 +18,18 @@
     }
     &__list-button {
         all: unset;
+        width: 108px;
+        height: 41px;
         cursor: pointer;
         text-align: center;
+        @media #{$mobile} {
+            width: 154px;
+            height: 48px;
+        }
+        &--active {
+            background: $white;
+            color: $codgray;
+        }
     }
     &__list-element {
         width: 108px;

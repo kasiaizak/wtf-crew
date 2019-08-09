@@ -1,13 +1,25 @@
 .users-container {
     margin-top: 5rem;
     display: grid;
+    grid-row: 2/2;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
     grid-column-gap: 3.75rem;
     @media #{$mobile} {
         grid-template-columns: 1fr;
         row-gap: 3rem;
         justify-items: center;
     }
+    &__title {
+        grid-row: 1/1;
+        grid-column: 1/5;
+    }
+    &--one, &--two, &--three, &--four {
+        display: none;
+        transform: translateX(-100%);
+    }
+    
+
 }
 
 .user {
@@ -55,3 +67,8 @@
         margin-bottom: 2.125rem;
     }
 }
+
+.visible {
+    animation: slide-in 1.1s forwards;
+    display: grid;
+  }
