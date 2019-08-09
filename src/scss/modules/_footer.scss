@@ -1,3 +1,6 @@
 .footer {
     margin-top: 2rem;
+    @media #{$mobile} {
+        text-align: center;
+    }
 }

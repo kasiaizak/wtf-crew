@@ -3,6 +3,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap: 3.75rem;
+    @media #{$mobile} {
+        grid-template-columns: 1fr;
+        row-gap: 3rem;
+        justify-items: center;
+    }
 }
 
 .user {
