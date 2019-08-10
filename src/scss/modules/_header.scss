@@ -1,0 +1,14 @@
+.header {
+    padding-top: 5.125rem;
+    &__description {
+        margin: 0;
+        max-width: 623px;
+        width: 100%;
+        font-size: 1.3125rem;
+        line-height: 1.75rem;
+    }
+    &__title {
+        font-weight: bold;
+        font-size: 3rem;
+    }
+}

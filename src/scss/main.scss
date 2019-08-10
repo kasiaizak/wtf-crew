@@ -1,16 +1,44 @@
 @import "_normalize";
 @import "_variables";
+@import "_animations";
+@import url("https://fonts.googleapis.com/css?family=Fira+Code:400,700&display=swap&subset=latin-ext");
 
+@import "./modules/header";
+@import "./modules/navigation";
+@import "./modules/users-cards";
+@import "./modules/footer";
 
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Fira Code", monospace;
+    font-size: 16px;
+        @media #{$mobile} {
+            font-size: 14px;
+        }
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
 
 body {
-  color: $yellow;
-  background: $violet;
+    color: $white;
+    background: $codgray;
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2.875rem;
+    @media #{$mobile} {
+        width: 90vw;
+        margin: 0 auto;
+        padding: 0;
+    }
 }
