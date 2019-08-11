@@ -2,7 +2,7 @@
     margin-top: 5rem;
     display: grid;
     grid-row: 2/2;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-column-gap: 1.75rem;
     @media #{$mobile} {
@@ -12,12 +12,13 @@
     }
     @media #{$tablet} {
         grid-template-columns: 1fr 1fr;
+        grid-row: 1/2;
         row-gap: 3rem;
         column-gap: 1rem;
     }
     &__title {
         grid-row: 1/1;
-        grid-column: 1/5;
+        grid-column: 1/4;
         @media #{$mobile} {
             grid-row: 1/1;
             grid-column: 1/1;
@@ -31,8 +32,6 @@
         display: none;
         transform: translateX(-100%);
     }
-    
-
 }
 
 .user {
@@ -50,7 +49,13 @@
         margin-top: auto;
         margin-bottom: 1.25rem;
         font-size: 0.875rem;
-        line-height: 1.125rem;
+        line-height: 2.2625rem;
+        font-weight: bold;
+        background: #ffffff;
+        color: #000000;
+        text-decoration: none;
+        text-align: center;
+        vertical-align: center;
     }
     &__description {
         margin: 0;
@@ -59,16 +64,18 @@
         font-size: 0.875rem;
         line-height: 1.125rem;
     }
+    &__photo {
+        width: 100px;
+        height: 100px;
+    }
     &__title {
-        margin: 0;
+        margin: 0 0 0 16px;
         padding: 0;
         font-weight: bold;
         font-size: 1.3125rem;
         line-height: 1.75rem;
         width: 154px;
-        height: 48px;
-        text-align: left;
-        vertical-align: middle;
+        align-items: center;
     }
     &__title-wrapper {
         background: #ffffff;
@@ -76,8 +83,9 @@
         width: 100%;
         height: 103px;
         display: flex;
+        flex-direction: row;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         margin-bottom: 2.125rem;
     }
 }
@@ -86,3 +94,23 @@
     animation: slide-in 1.1s forwards;
     display: grid;
   }
+
+.fill {
+    max-width: 293px;
+    width: 100%;
+    min-height: 358px;
+    display: none;
+    border: 3px solid #ffffff;
+    @media #{$tablet} {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    &__link {
+        color: #ffffff;
+    }
+    &__title {
+        transform: rotate(-45deg);
+    }
+}
