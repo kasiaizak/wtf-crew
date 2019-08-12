@@ -34,21 +34,21 @@
     &__list-element {
         width: 108px;
         height: 41px;
-        display: flex; 
+        display: flex;
         align-items: center;
         justify-content: center;
         font-style: normal;
         font-weight: normal;
         font-size: 0.75rem;
         line-height: 1rem;
-        border-right: 1px solid #ffffff;
-        border-top: 1px solid #ffffff;
-        border-bottom: 1px solid #ffffff;
+        border-right: 1px solid #fff;
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
         &:first-child {
-            border-left: 1px solid #ffffff;
+            border-left: 1px solid #fff;
         }
         @media #{$mobile} {
-            border: 1px solid #ffffff;
+            border: 1px solid #fff;
             width: 154px;
             height: 48px;
         }

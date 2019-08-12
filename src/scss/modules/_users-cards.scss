@@ -37,7 +37,7 @@
 .user {
     display: flex;
     flex-direction: column;
-    border: 3px solid #ffffff;
+    border: 3px solid #fff;
     max-width: 293px;
     width: 100%;
     min-height: 358px;
@@ -51,7 +51,7 @@
         font-size: 0.875rem;
         line-height: 2.2625rem;
         font-weight: bold;
-        background: #ffffff;
+        background: #fff;
         color: #000000;
         text-decoration: none;
         text-align: center;
@@ -78,7 +78,7 @@
         align-items: center;
     }
     &__title-wrapper {
-        background: #ffffff;
+        background: #fff;
         color: $codgray;
         width: 100%;
         height: 103px;
@@ -100,7 +100,7 @@
     width: 100%;
     min-height: 358px;
     display: none;
-    border: 3px solid #ffffff;
+    border: 3px solid #fff;
     @media #{$tablet} {
         display: flex;
         text-align: center;
@@ -108,7 +108,7 @@
         align-items: center;
     }
     &__link {
-        color: #ffffff;
+        color: #fff;
     }
     &__title {
         transform: rotate(-45deg);
