@@ -1,0 +1,60 @@
+.nav {
+    padding-top: 2.75rem;
+    max-width: 432px;
+    @media #{$mobile} {
+        margin-left: calc(50% - 154px);
+    }
+    &__list {
+        margin: 0;
+        padding: 0;
+        display: grid;
+        width: 108px;
+        height: 41px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        list-style: none;
+        @media #{$mobile} {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    &__list-button {
+        all: unset;
+        width: 108px;
+        height: 41px;
+        cursor: pointer;
+        text-align: center;
+        @media #{$mobile} {
+            width: 154px;
+            height: 48px;
+        }
+        &--active {
+            background: $white;
+            color: $codgray;
+        }
+    }
+    &__list-element {
+        width: 108px;
+        height: 41px;
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 0.75rem;
+        line-height: 1rem;
+        border-right: 1px solid #ffffff;
+        border-top: 1px solid #ffffff;
+        border-bottom: 1px solid #ffffff;
+        &:first-child {
+            border-left: 1px solid #ffffff;
+        }
+        @media #{$mobile} {
+            border: 1px solid #ffffff;
+            width: 154px;
+            height: 48px;
+        }
+        &:hover {
+            background: $white;
+            color: $codgray;
+        }
+    }
+}
