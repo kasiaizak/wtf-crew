@@ -12,9 +12,9 @@ html {
     box-sizing: border-box;
     font-family: "Fira Code", monospace;
     font-size: 16px;
-        @media #{$mobile} {
-            font-size: 14px;
-        }
+    @media #{$mobile} {
+        font-size: 14px;
+    }
 }
 
 *,
