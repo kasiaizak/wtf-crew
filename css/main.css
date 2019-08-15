@@ -346,6 +346,8 @@ template {
     -ms-grid-columns: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     list-style: none; }
+    .nav__list:first-child {
+      border-left: 1px solid #fff; }
     @media (max-width: 620px) {
       .nav__list {
         -ms-grid-columns: 1fr 1fr;
@@ -354,7 +356,6 @@ template {
     background: #171717;
     color: #ffffff;
     border: 1px solid #fff;
-    border-left: none;
     width: 108px;
     height: 41px;
     cursor: pointer;
