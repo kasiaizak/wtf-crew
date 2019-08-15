@@ -351,11 +351,17 @@ template {
         -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr; } }
   .nav__list-button {
-    all: unset;
+    background: #171717;
+    color: #ffffff;
+    border: 1px solid #fff;
+    border-left: none;
     width: 108px;
     height: 41px;
     cursor: pointer;
     text-align: center; }
+    .nav__list-button:hover {
+      background: #ffffff;
+      color: #171717; }
     @media (max-width: 620px) {
       .nav__list-button {
         width: 154px;
@@ -378,20 +384,12 @@ template {
     font-style: normal;
     font-weight: normal;
     font-size: 0.75rem;
-    line-height: 1rem;
-    border-right: 1px solid #fff;
-    border-top: 1px solid #fff;
-    border-bottom: 1px solid #fff; }
-    .nav__list-element:first-child {
-      border-left: 1px solid #fff; }
+    line-height: 1rem; }
     @media (max-width: 620px) {
       .nav__list-element {
         border: 1px solid #fff;
         width: 154px;
         height: 48px; } }
-    .nav__list-element:hover {
-      background: #ffffff;
-      color: #171717; }
 
 .users-container {
   margin-top: 5rem;
