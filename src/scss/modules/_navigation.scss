@@ -12,16 +12,26 @@
         height: 41px;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         list-style: none;
+        &:first-child {
+          border-left: 1px solid #fff;
+        }
         @media #{$mobile} {
             grid-template-columns: 1fr 1fr;
         }
     }
     &__list-button {
-        all: unset;
+        background: $codgray;
+        color: $white;
+        border: 1px solid #fff;
+        border-left: none;
         width: 108px;
         height: 41px;
         cursor: pointer;
         text-align: center;
+        &:hover {
+          background: $white;
+          color: $codgray;
+      }
         @media #{$mobile} {
             width: 154px;
             height: 48px;
@@ -41,20 +51,10 @@
         font-weight: normal;
         font-size: 0.75rem;
         line-height: 1rem;
-        border-right: 1px solid #fff;
-        border-top: 1px solid #fff;
-        border-bottom: 1px solid #fff;
-        &:first-child {
-            border-left: 1px solid #fff;
-        }
         @media #{$mobile} {
             border: 1px solid #fff;
             width: 154px;
             height: 48px;
-        }
-        &:hover {
-            background: $white;
-            color: $codgray;
         }
     }
 }
