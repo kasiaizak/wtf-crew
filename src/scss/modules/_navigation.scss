@@ -39,6 +39,7 @@
         &--active {
             background: $white;
             color: $codgray;
+            z-index: 1;
         }
     }
     &__list-element {
