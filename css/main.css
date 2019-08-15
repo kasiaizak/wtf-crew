@@ -370,7 +370,8 @@ template {
         height: 48px; } }
     .nav__list-button--active {
       background: #ffffff;
-      color: #171717; }
+      color: #171717;
+      z-index: 1; }
   .nav__list-element {
     width: 108px;
     height: 41px;
