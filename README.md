@@ -1,4 +1,4 @@
-![Screenshot](https://kasiaizak.github.io/wtf-crew/assets/img/screenshot.png)
+![Screenshot](https://kasiaizak.github.io/wtf-crew/assets/img/cover.png)
 
 # wtf-gulp-starter
 
