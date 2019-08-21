@@ -1,3 +1,5 @@
+![Screenshot](https://kasiaizak.github.io/wtf-crew/assets/img/screenshot.png)
+
 # wtf-gulp-starter
 
 `npm install -g gulp-cli`
