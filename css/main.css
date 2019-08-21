@@ -318,17 +318,16 @@ template {
     -webkit-transform: translateX(0%);
             transform: translateX(0%); } }
 
-.header {
-  padding-top: 5.125rem; }
-  .header__description {
-    margin: 0;
-    max-width: 623px;
-    width: 100%;
-    font-size: 1.3125rem;
-    line-height: 1.75rem; }
-  .header__title {
-    font-weight: bold;
-    font-size: 3rem; }
+.header__description {
+  margin: 0;
+  max-width: 623px;
+  width: 100%;
+  font-size: 1.3125rem;
+  line-height: 1.75rem; }
+
+.header__title {
+  font-weight: bold;
+  font-size: 3rem; }
 
 .nav {
   padding-top: 2.75rem;
