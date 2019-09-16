@@ -5,15 +5,14 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-column-gap: 1.75rem;
+    row-gap: 3rem;
     @media #{$mobile} {
         grid-template-columns: 1fr;
-        row-gap: 3rem;
         justify-items: center;
     }
     @media #{$tablet} {
         grid-template-columns: 1fr 1fr;
         grid-row: 1/2;
-        row-gap: 3rem;
         column-gap: 1rem;
     }
     &__title {
@@ -28,7 +27,7 @@
             grid-column: 1/3;
         }
     }
-    &--one, &--two, &--three, &--four {
+    &--one, &--two, &--three {
         display: none;
         transform: translateX(-100%);
     }
@@ -68,6 +67,7 @@
         width: 100px;
         height: 100px;
         border-radius: 50%;
+        padding: 5px;
     }
     &__title {
         margin: 0 0 0 16px;
@@ -100,13 +100,24 @@
     max-width: 293px;
     width: 100%;
     min-height: 358px;
-    display: none;
+    display: flex;
     border: 3px solid #fff;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    &--three {
+        display: none;
+    }
     @media #{$tablet} {
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
+        &--two {
+            display: none;
+        }
+        &--three {
+            display: flex;
+        }
+    }
+    @media #{$mobile} {
+        display: none;
     }
     &__link {
         color: #fff;
