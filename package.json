@@ -33,11 +33,11 @@
     "gulp-babel": "^8.0.0",
     "gulp-notify": "^3.2.0",
     "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
-    "gulp-postcss": "^8.0.0",
     "gulp-uglify": "^3.0.2",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.13.1",
     "webpack": "^4.35.0",
     "webpack-stream": "^5.2.1"
   },
